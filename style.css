@@ -6,85 +6,100 @@
 
 body{
     background-color: #fafaf9;
-    color: #111111;
 }
 
-header{
+header,
+footer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
     padding: 16px 40px;
-    border-bottom: 1px solid #e5e5e3;
-}
-
-.hero{
-    padding: 100px 40px;
-    text-align: center;
-}
-
-.hero h2{
-   font-size: 48px; 
-}
-
-.hero p{
-    margin-bottom: 32px
+    background-color: #ffffff;
+    border: 1px solid #e5e5e3;
 }
 
 .btn{
-    color: #ffffff;
     background-color: #111111;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 20px;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #333333;
 }
 
 .cta{
-    font-size: 18px;
     padding: 24px 32px;
+    font-size: 18px;
+}
+
+.hero{
+    text-align: center;
+    padding: 100px 24px;
+}
+
+.hero h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    margin: 20px auto;
 }
 
 .conteudo{
     display: flex;
     flex-direction: row-reverse;
-    padding: 40px;
+
+    padding: 20px 40px;
 }
 
-.vagas{
+.conteudo main{
     width: 100%;
+    padding: 8px;
 }
 
-.vagas__header{
+.conteudo aside{
+    width: 300px;
+    padding: 8px;
+}
+
+.conteudo__header{
     display: flex;
     justify-content: space-between;
+    padding: 16px 0;
 }
 
-.vagas__card{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-.filtros{
-    width: 220px;
-}
-
-.filtros__header{
-    display: flex;
-    justify-content: space-between;
-}
-
-.filtros__itens{
+.conteudo__filter{
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
-.filtros__itens p{
+.conteudo__filter p{
+    padding-bottom: 16px;
     font-size: 12px;
     font-weight: bold;
-    margin: 8px 0;
+}
+
+.conteudo__filter label{
+    padding: 8px;
+}
+
+.form__input{
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #e5e5e3;
+    border-radius: 8px;
+}
+
+.depoimentos{
+    display: flex;
+    justify-content: center;
 }
